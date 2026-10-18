@@ -1,0 +1,57 @@
+=== 1. Files ===
+total 8
+lrwxrwxrwx 1 root otterstaff   19 Oct 18 19:50 live -> /srv/driftwood/site
+drwxr-x--- 2 root otterstaff 4096 Oct 18 19:50 private
+drwxr-x--- 3 root otterstaff 4096 Oct 18 19:50 site
+
+=== 2. Permissions ===
+total 4
+-rw------- 1 root otterstaff 26 Oct 18 19:50 credentials.txt
+
+=== 3. Users ===
+uid=1001(intern) gid=1002(intern) groups=1002(intern),1001(otterstaff)
+
+=== 4. Processes ===
+    PID COMMAND
+      1 systemd
+no sleep process left for intern
+
+=== 5. Services ===
+active
+* * * * * cd /srv && tar -czf $HOME/driftwood_backup.tar.gz driftwood/site && date >> $HOME/driftwood_cron.log
+
+=== 6. I/O ===
+Sun Oct 18 20:06:01 UTC 2026
+Sun Oct 18 20:07:01 UTC 2026
+ 0 /root/stdout_only.txt
+63 /root/stderr_only.txt
+63 total
+=== 1. Files ===
+total 8
+lrwxrwxrwx 1 root otterstaff   19 Oct 18 19:50 live -> /srv/driftwood/site
+drwxr-x--- 2 root otterstaff 4096 Oct 18 19:50 private
+drwxr-x--- 3 root otterstaff 4096 Oct 18 19:50 site
+
+=== 2. Permissions ===
+total 4
+-rw------- 1 root otterstaff 26 Oct 18 19:50 credentials.txt
+
+=== 3. Users ===
+uid=1001(intern) gid=1002(intern) groups=1002(intern),1001(otterstaff)
+
+=== 4. Processes ===
+    PID COMMAND
+      1 systemd
+no sleep process left for intern
+
+=== 5. Services ===
+active
+* * * * * cd /srv && tar -czf $HOME/driftwood_backup.tar.gz driftwood/site && date >> $HOME/driftwood_cron.log
+
+=== 6. I/O ===
+Sun Oct 18 20:06:01 UTC 2026
+Sun Oct 18 20:07:01 UTC 2026
+ 0 /root/stdout_only.txt
+63 /root/stderr_only.txt
+63 total
+
