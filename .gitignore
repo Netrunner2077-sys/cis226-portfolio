@@ -1,0 +1,7 @@
+# Things that should never be published
+evidence.txt
+*.log
+*.key
+*.pem
+.env
+*.tar.gz
