@@ -8,6 +8,7 @@ Introduction to Operating Systems and Command-Line Languages, at Southwestern Co
 - `weeks-01-07/` - my strongest command-line work from the first seven weeks
 - `week08-rehearsal/` - a dress rehearsal of the whole system, from files to I/O
 - `week09-networking/` - my Week 9 work: finding whether a problem is the network or the host
+- `week10-text-tools/` - my Week 10 work: editing text with vim, sed, and awk
  
 ## What I've learned so far
  
