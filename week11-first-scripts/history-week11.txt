@@ -1,0 +1,100 @@
+    1  git pull
+    2  mkdir -p week09-networking
+    3  nano week09-networking/network_summary.txt
+    4  nano week09-networking/remote_summary.txt
+    5  nano week09-networking/network-or-host.md
+    6  nano README.md
+    7  git add week09-networking README.md
+    8  git grep -niE "BEGIN (OPENSSH|RSA|EC) PRIVATE KEY|github_pat_|ghp_|password|secret|token" || echo "scrub check: nothing found"
+    9  git grep -n "TODO" -- week09-networking README.md || echo "no TODO left"
+   10  git commit -m "Add Week 9 networking work"
+   11  git push
+   12  git log --oneline
+   13  git status
+   14  EXIT
+   15  exit
+   16  cd /workspaces/cis226-portfolio
+   17  git pull
+   18  mkdir -p week11-first-scripts
+   19  cd week11-first-scripts
+   20  printf '%s\n' 'source $VIMRUNTIME/defaults.vim' 'autocmd FileType * setlocal formatoptions-=cro' >> ~/.vimrc
+   21  vim hello.sh
+   22  bash hello.sh
+   23  ./hello.sh
+   24  chmod +x hello.sh
+   25  ls -l hello.sh
+   26  ./hello.sh
+   27  echo "My shell's PID is $$"
+   28  ./hello.sh
+   29  git add .
+   30  git commit -m "Add hello.sh"
+   31  shop="Driftwood Books"
+   32  echo "Welcome to $shop"
+   33  echo 'Welcome to $shop'
+   34  echo "$shop_sign"
+   35  echo "${shop}_sign"
+   36  shop2 = "Driftwood Books"
+   37  title=Sea Glass and Silence
+   38  shop2 = "Driftwood Books"
+   39  title="Sea Glass and Silence"
+   40  bash -c 'echo "Child sees: [$shop]"'
+   41  export shop
+   42  bash -c 'echo "Child sees: [$shop]"'
+   43  today=$(date +%F)
+   44  echo "Today is $today"
+   45  f="/tmp/Sea Glass Report.txt"
+   46  touch "$f"
+   47  ls -l $f
+   48  ls -l "$f"
+   49  vim args.sh
+   50  chmod +x args.sh
+   51  ./args.sh Compass Rose
+   52  ./args.sh "Compass Rose" 2026
+   53  vim greeter.sh
+   54  chmod +x greeter.sh
+   55  ./greeter.sh
+   56  echo Sam | ./greeter.sh
+   57  git add .
+   58  git commit -m "Add args.sh and greeter.sh"
+   59  vim sales.csv
+   60  vim sales-week2.csv
+   61  wc -l sales.csv sales-week2.csv
+   62  vim sales.csv
+   63  vim sales-week2.csv
+   64  wc -l sales.csv sales-week2.csv
+   65  git add .
+   66  git commit -m "Add sales files"
+   67  opening-report.sh
+   68  vim opening-report.sh
+   69  chmod +x opening-report.sh
+   70  ./opening-report.sh
+   71  vim opening-report.sh
+   72  chmod +x opening-report.sh
+   73  ./opening-report.sh
+   74  ./opening-report.sh sales-week2.csv
+   75  :%s/YOUR NAME/Aldrich/
+   76  vim opening-report.sh
+   77  :%s/YOUR NAME/Aldrich/
+   78  vim opening-report.sh
+   79  :%s/YOUR NAME/Aldrich/
+   80  cat << 'EOF' >> opening-report.sh
+online=$(awk -F, 'NR>1 && $5 == "online" {t+=$3*$4} END {printf "%.2f", t}' "$sales_file")
+echo "Online Revenue: \$${online}"
+EOF
+
+   81  :%s/YOUR NAME/Aldrich/
+   82  vim opening-report.sh
+   83  :%s/YOUR NAME/Aldrich/
+   84  vim opening-report.sh
+   85  cat opening-report.sh
+   86  vim opening-report.sh
+   87  chmod +x opening-report.sh
+   88  ./opening-report.sh
+   89  ./opening-report.sh sales-week2.csv
+   90  ./opening-report.sh no-such-file.csv
+   91  git add .
+   92  git commit -m "Add opening-report.sh with online revenue"
+   93  cd /workspaces/cis226-portfolio/week11-first-scripts
+   94  {   echo "== Scripts =="; ls -l *.sh;   echo "== Default file =="; echo "Sam" | ./opening-report.sh;   echo "== Week 2 file =="; echo "Sam" | ./opening-report.sh sales-week2.csv; } | tee week11_summary.txt
+   95  vim ../README.md
+   96  history > history-week11.txt

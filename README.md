@@ -13,3 +13,4 @@ Introduction to Operating Systems and Command-Line Languages, at Southwestern Co
 ## What I've learned so far
  
 So far in this course, I have mastered managing multi-user environments and enforcing strict privilege security boundaries using Linux permissions. I have also learned how to automate administrative tasks through cron jobs and securely manage background processes. Additionally, I now know how to properly manipulate input/output streams and track all of my workspace developments using Git version control.
+- week11-first-scripts: my first Bash scripts

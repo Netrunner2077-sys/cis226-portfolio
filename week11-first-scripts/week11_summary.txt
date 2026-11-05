@@ -1,0 +1,21 @@
+== Scripts ==
+-rwxrwxrwx 1 codespace codespace  64 Nov  5 06:32 args.sh
+-rwxrwxrwx 1 codespace codespace 107 Nov  5 06:36 greeter.sh
+-rwxrwxrwx 1 codespace codespace 138 Nov  5 06:09 hello.sh
+-rwxrwxrwx 1 codespace codespace 718 Nov  5 07:14 opening-report.sh
+== Default file ==
+=== Sea Glass and Silence: Morning Report ===
+Good morning, Sam. Today is Thursday.
+Reading: sales.csv
+Sales: 6
+Books: 22
+Revenue: $246.23
+Online Revenue: $123.75
+== Week 2 file ==
+=== Sea Glass and Silence: Morning Report ===
+Good morning, Sam. Today is Thursday.
+Reading: sales-week2.csv
+Sales: 3
+Books: 12
+Revenue: $126.21
+Online Revenue: $48.75
