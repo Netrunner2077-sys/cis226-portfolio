@@ -1,3 +1,9 @@
+case "${1:-}" in
+  -h|--help)
+    echo "Usage: ./opening-report.sh [sales-file]"
+    exit 0
+    ;;
+esac
 #!/bin/bash
 set -euo pipefail
 # opening-report.sh - Sea Glass and Silence morning report
