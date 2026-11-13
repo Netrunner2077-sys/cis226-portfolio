@@ -1,0 +1,36 @@
+== Scripts ==
+-rwxrwxrwx 1 codespace codespace  500 Nov 13 18:50 channel-note.sh
+-rwxrwxrwx 1 codespace codespace  338 Nov 13 18:51 confirm.sh
+-rwxrwxrwx 1 codespace codespace  197 Nov 13 18:43 file-check.sh
+-rwxrwxrwx 1 codespace codespace 1097 Nov 13 19:11 opening-report.sh
+-rwxrwxrwx 1 codespace codespace  178 Nov 13 19:04 safe-demo.sh
+-rwxrwxrwx 1 codespace codespace  284 Nov 13 18:44 stock-check.sh
+== Good file ==
+=== Sea Glass and Silence: Morning Report ===
+Good morning, Sam. Today is Friday.
+Reading: sales.csv
+Sales: 6
+Books: 22
+Revenue: $246.23
+Online Revenue: $123.75
+Mood: Busy week
+exit code: 0
+== Week 2 file ==
+=== Sea Glass and Silence: Morning Report ===
+Good morning, Sam. Today is Friday.
+Reading: sales-week2.csv
+Sales: 3
+Books: 12
+Revenue: $126.21
+Online Revenue: $48.75
+Mood: Steady week
+exit code: 0
+== Missing file ==
+Error: I can't find the file 'no-such-file.csv'.
+exit code: 1
+== No sales ==
+Error: 'header-only.csv' has no sales in it.
+exit code: 2
+== Channel note ==
+Pack it, print the label, and drop it at the post office.
+exit code: 0
